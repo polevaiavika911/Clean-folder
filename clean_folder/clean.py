@@ -115,9 +115,9 @@ files_by_category = {
 }
 
 
-if __name__ == "__main__":
+def clean_folder():
     if len(sys.argv) != 2:
-        print("Usage: python script.py <folder_path>")
+        print("Usage: clean-folder <folder_path>")
         sys.exit(1)
 
     folder_to_sort = sys.argv[1]
@@ -127,3 +127,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     sort_folders(folder_to_sort)
+
+
+
+if __name__ == "__main__":
+    clean_folder()
